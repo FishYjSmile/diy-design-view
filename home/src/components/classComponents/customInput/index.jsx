@@ -1,14 +1,14 @@
 import React from 'react'
-import { UserOutlined } from '@ant-design/icons';
+// import { UserOutlined } from '@ant-design/icons';
 // import { Input } from 'antd';
 export default class CustomInput extends React.Component {
   constructor(props) {
-    super()
-    this.props = props
+    super(props)
     this.state = {
       isInput: true
     }
     this.handleDoubleClick = this.handleDoubleClick.bind(this)
+    
   }
 
   handleDoubleClick() {
@@ -40,8 +40,9 @@ export default class CustomInput extends React.Component {
           // prefix={ <UserOutlined /> }
           // />
           // : value
-          value
+          // value
         }
+        {/* <h2 onClick={() => React.$bus.emit('addListener')}>123123</h2> */}
       </div>
     )
   }
